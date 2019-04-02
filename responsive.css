@@ -1,0 +1,92 @@
+@media screen and (max-width:1024px){
+  .pant{
+    width:50%;
+  }
+  .interview-item{
+    width:50%;
+  }
+  .container{
+    overflow: hidden;
+  }
+  .head-wrapper{
+    height: 700px;
+    background-size: cover;
+    background-image: url(pants-head-image-responsive.png);
+    background-position: bottom;
+  }
+
+}
+@media screen and (max-width:1000px){
+  .pant{
+    width:50%;
+  }
+  .interview-item{
+    width:50%;
+  }
+  .container{
+    overflow: hidden;
+  }
+  .head-wrapper{
+    height: 520px;
+    background-size: cover;
+    background-image: url(pants-head-image-responsive.png);
+  }
+
+}
+
+@media screen and (max-width:670px){
+  .pant{
+    width:100%;
+  }
+  .interview-item{
+    width:100%;
+  }
+  .container{
+    overflow: hidden;
+  }
+
+  #faq-list{
+    width:300px;
+  }
+  .question{
+    width:250px;
+  }
+  .head-wrapper{
+
+    background-size: cover;
+    background-image: url(pants-head-image.jpg);
+  }
+  .header-list-item{
+    float:none;
+  }
+  .memu-icon{
+    display:block;
+  }
+  .header-list a{
+    color:rgba(255, 255, 255, 0.7);
+    background-color:rgba(0, 0, 0, 0.7);
+    font-family: "Bauhaus 93","Harlow Solid Italic","Eras Bold ITC";
+    font-weight: lighter;
+    text-align: center;
+    line-height: 40px;
+    width:80px;
+    height: 40px;
+    font-size: 12px;
+    display: block;
+    padding:0 15px;
+    transition:all 1s;
+  }
+  .header-right a:hover{
+    color: rgba(255, 255, 255, 1);
+  }
+  .header-right{
+    position: absolute;
+    top: 65px;
+    right:0;
+    display:none;
+  }
+
+  .modal{
+    padding:50px 20px;
+  }
+}

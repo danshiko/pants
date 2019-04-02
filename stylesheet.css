@@ -1,0 +1,333 @@
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p, div {
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: "游ゴシック", YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+a{
+  text-decoration: none;
+}
+li{
+  list-style: none;
+}
+*{
+  box-sizing: border-box;
+}
+.container{
+  max-width:1170px;
+  width:100%;
+  padding:0 15px;
+  margin:0 auto;
+}
+
+
+/*ヘッダー*/
+header{
+  height: 65px;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  color:white;
+  line-height: 65px;
+  position: fixed;
+  z-index: 10;
+}
+.header-left{
+  float:left;
+}
+.header-left h1{
+  font-family: "Bauhaus 93","Harlow Solid Italic","Eras Bold ITC";
+  font-size: 55px;
+  font-weight: normal;
+  cursor: pointer;
+}
+.header-right{
+  float:right;
+  display: none;
+}
+.header-list-item{
+  float:left;
+}
+.header-list a{
+  color:white;
+  font-family: "Bauhaus 93","Harlow Solid Italic","Eras Bold ITC";
+  font-weight: lighter;
+  display: inline-block;
+  padding:0 25px;
+  transition:all 1s;
+}
+.header-right a:hover{
+  background-color: rgba(255, 255, 255, 0.4);
+}
+.menu-icon{
+  float:right;
+  color:white;
+  font-size:25px;
+  padding:20px 0;
+  margin-left: 20px;
+  display: none;
+  cursor: pointer;
+}
+
+
+.pants-modal-wrapper{
+  position:fixed;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  z-index: 100;
+  background-color:rgba(255, 255, 255, 0.6);
+  display: none;
+}
+.modal{
+  position:fixed;
+  left:50%;
+  top:50%;
+  transform: translate(-50%,-50%);
+  background-color: rgba(0, 0, 0, 0.9);
+  text-align: center;
+  padding:50px 100px;
+  border-radius: 10px;
+}
+.form-modal h2{
+  font-family: "Bauhaus 93","Harlow Solid Italic","Eras Bold ITC";
+  color:white;
+  font-weight: normal;
+  margin-bottom: 30px;
+  font-size: 30px;
+}
+.enter{
+  display:block;
+  font-family: "Bauhaus 93","Harlow Solid Italic","Eras Bold ITC";
+  font-weight: normal;
+  background-color: white;
+  color:black;
+  border-radius: 30px;
+  width:250px;
+  padding:5px 0;
+  box-shadow: 0px 5px #696969;
+
+}
+.enter:active{
+  position:relative;
+  top:5px;
+  box-shadow: none;
+}
+.form-modal select{
+  display:block;
+  border-radius: 30px;
+  width:250px;
+  padding:5px 20px;
+  margin-bottom: 20px;
+}
+.fa-times{
+  position: absolute;
+  top:13px;
+  right:13px;
+  color:rgba(255, 255, 255, 0.8);
+  cursor: pointer;
+}
+
+
+/*ヘッド*/
+.head-wrapper{
+  height: 850px;
+  background-size: cover;
+  background-image: url(pants-head-image.jpg);
+}
+.heading{
+  position: relative;
+}
+.heading h1{
+  color:rgba(255, 255, 255, 0.8);
+  font-size: 80px;
+  text-align: left;
+  position: absolute;
+  top:570px;
+  letter-spacing: 5px;
+}
+
+/*ボタン*/
+.btn{
+  display:inline-block;
+  background-color:rgba(255, 255, 255, 0.8);
+  font-weight: bold;
+  margin-bottom:20px;
+  border-radius: 10px;
+  padding:10px 100px;
+  box-shadow: 0 8px #696969;
+  color:black;
+  transition:background-color 1s;
+}
+.btn:hover{
+  background-color: rgba(255, 255, 255, 1);
+}
+.btn:active{
+  position:relative;
+  top:8px;
+  box-shadow: none;
+}
+.btn-wrapper{
+  height:250px;
+  background-color: black;
+  text-align:center;
+  padding:50px 0;
+}
+.section-title-white h2{
+  color:white;
+  font-family: "Bauhaus 93","Harlow Solid Italic","Eras Bold ITC";
+  font-size: 35px;
+  margin-bottom: 35px;
+  font-weight: normal;
+}
+
+/*スライド*/
+.slide-wrapper{
+  margin:50px auto;
+  width:100%;
+  text-align: center;
+}
+.slider img{
+  margin:0 auto;
+  width:20%;
+}
+
+
+/*パンツの種類*/
+.pants-wrapper{
+  text-align: center;
+  background-color:black;
+  padding:50px 0;
+}
+.section-title h2{
+  color:black;
+  font-family: "Bauhaus 93","Harlow Solid Italic","Eras Bold ITC";
+  font-size: 35px;
+  margin-bottom: 35px;
+  font-weight: normal;
+  text-align: center;
+}
+.pant{
+  float:left;
+  box-sizing: border-box;
+  width:25%;
+  padding: 0 15px;
+  text-align: center;
+}
+.pant-icon{
+  text-align: center;
+  position: relative;
+}
+.pant-icon p{
+  font-size: 10px;
+  color:white;
+  font-weight: bold;
+  position: absolute;
+  top:40%;
+  width:100%;
+}
+.pant-icon img{
+  width:120px;
+}
+.pant-text{
+  color:white;
+  padding:10px 0;
+  font-size:13px;
+}
+.text-contents{
+  display: none;
+}
+.text-active{
+  display: block;
+}
+.clear{
+  clear:left;
+}
+
+/*FAQ*/
+.faq-wrapper{
+  text-align: center;
+  padding:50px 0;
+}
+#faq-list{
+  width:500px;
+  margin:0 auto;
+  padding:0;
+}
+.faq-list-item{
+  text-align: left;
+  cursor: pointer;
+  position:relative;
+  margin:10px;
+  border-bottom: 0.7px dashed #696969;
+}
+.faq-list-item h3{
+  font-size:13px;
+  margin:10px 0;
+}
+.faq-list-item span{
+  font-size:10px;
+  color:#696969;
+  position:absolute;
+  top:0;
+  right:5px;
+}
+.answer{
+  font-size:12px;
+  margin:20px 0;
+  display:none;
+}
+
+.interview-wrapper{
+  padding:50px 0;
+}
+.interview-item{
+  padding:0 50px;
+  float:left;
+  box-sizing: border-box;
+  width:50%;
+}
+.interview-item img{
+  width:120px;
+  position: relative;
+  top:0;
+  left:35%;
+}
+.interview-text h3{
+  font-size: 13px
+}
+.interview-text p{
+  font-size: 12px;
+}
+
+
+footer{
+  height: 200px;
+  background-color: black;
+  text-align: center;
+}
+.sns-icon{
+  color:black;
+  background-color: rgba(255, 255, 255, 0.8);
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  display: inline-block;
+  height:40px;
+  width:40px;
+  font-size: 20px;
+  margin:50px 30px;
+  transition: all 1s;
+}
+.sns-icon:hover{
+  background-color: rgba(255, 255, 255, 1);
+}
+.footer-message p{
+  font-size: 10px;
+  color: white;
+  margin-bottom: 50px;
+}
